@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "ES2023",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"types": ["node", "vitest/globals"],
+		"noEmit": true
+	},
+	"include": ["src/**/*.ts", ".flue/**/*.ts", "scripts/**/*.ts", "test/**/*.ts", "flue.config.ts"]
+}

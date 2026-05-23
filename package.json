@@ -1,0 +1,29 @@
+{
+	"name": "wikiedit",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"smoke": "tsx scripts/smoke.ts",
+		"flue:dry": "flue run wiki-edit --target node --id wiki-edit-dry --payload '{\"pageTitle\":\"Wikipedia\",\"request\":\"Dry-run source/page wiring only.\",\"dry_run\":true,\"sourceUrls\":[\"https://www.wikipedia.org/\"]}'"
+	},
+	"dependencies": {
+		"@flue/runtime": "^0.7.0",
+		"@mozilla/readability": "^0.6.0",
+		"fast-xml-parser": "^5.3.2",
+		"jsdom": "^27.2.0",
+		"valibot": "^1.2.0"
+	},
+	"devDependencies": {
+		"@flue/cli": "^0.7.0",
+		"@types/jsdom": "^27.0.0",
+		"@types/node": "^24.10.1",
+		"tsx": "^4.20.6",
+		"typescript": "^5.9.3",
+		"vitest": "^4.0.13"
+	},
+	"engines": {
+		"node": ">=22.18.0"
+	}
+}
