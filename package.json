@@ -11,7 +11,7 @@
 	"dependencies": {
 		"@flue/runtime": "^0.7.0",
 		"@mozilla/readability": "^0.6.0",
-		"fast-xml-parser": "^5.3.2",
+		"fast-xml-parser": "^5.12.0",
 		"jsdom": "^27.2.0",
 		"valibot": "^1.2.0"
 	},
